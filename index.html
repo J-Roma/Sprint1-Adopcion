@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="/styles/styles.css">
+</head>
+
+<body>
+  <main>
+    <div class="container-fluid pt-4 ps-4 pe-3">
+      <p class="h1">Adopta una adorable mascota</p>
+      <p class="mt-4"> Categoría de mascotas</p>
+      <div class="justify-content-center">
+        <ul class="nav nav-pills mb-3 " id="pills-tab" role="tablist">
+          <li class="nav-item col-6" role="presentation">
+            <button class="nav-link ms-3 h6" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+              type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+              <img class="img-fluid" src="images/perro2.png"> Perro
+            </button>
+          </li>
+          <li class="nav-item col-6" role="presentation">
+            <button class="nav-link h6 ms-2" id="pills-profile-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+              aria-selected="false">
+              <img class="img-fluid" src="images/gato.png"> Gato
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <img src="images/chester.png">
+            <img src="images/papi.png">
+            <img src="images/rocky.png">
+            <img src="images/pelusa.png">
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <img src="images/matilde.png">
+            <img src="images/pelusag.png">
+            <img src="images/kitty.png">
+            <img src="images/bombon.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section>
+    <div>
+      <nav class="navbar nav-pills fixed-bottom navbar-expand-lg navbar-light bg-light">
+        <div class="container-md justify-content-center text-center">
+          <a class="col-sm-2 navbar-brand nav-link active" href="#">
+            <i id="txt" class="bi bi-house-door"></i> Inicio
+          </a>
+          <a class="col-sm-2 navbar-brand nav-link" href="#">
+            <i id="txt" class="bi bi-chat"></i>
+          </a>
+          <a class="col-sm-2 navbar-brand nav-link" href="#">
+            <i id="txt" class="bi bi-heart"></i>
+          </a>
+          <a class="col-sm-2 navbar-brand nav-link" href="#">
+            <i id="txt" class="bi bi-person"></i>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+<script src="/scripts/main.js"></script>
+
+</html>
+
+<!--nav class="navbar justify-content-betwen fixed-bottom nav-pills navbar-light bg-light flex-sm-row ">
+          <a class="col-sm-3 flex-sm-fill text-sm-center nav-link " aria-current="page" href="#" id="add"><i id="txt" class="bi bi-house-door"></i></a>
+          <a id="add2" class="col-sm-3 flex-sm-fill text-sm-center nav-link" href="#" ><i class="bi bi-chat"></i> </a>
+          <a class="col-sm-3 flex-sm-fill text-sm-center nav-link" href="#" id="add"><i class="bi bi-heart"></i></a>
+          <a class="col-sm-3 flex-sm-fill text-sm-center nav-link " href="#" id="add"><i class="bi bi-person"></i></a>
+        </nav-->

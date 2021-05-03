@@ -1,0 +1,29 @@
+{
+  "name": "Sprint1-Adopcion",
+  "version": "1.0.0",
+  "description": "Sprint1, Mobil to Web, Web page to adopt pets",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/J-Roma/Sprint1-Adopcion.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/J-Roma/Sprint1-Adopcion/issues"
+  },
+  "homepage": "https://github.com/J-Roma/Sprint1-Adopcion#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

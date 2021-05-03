@@ -1,11 +1,71 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap');
-
 * {
     font-family: 'Nunito', sans-serif;
 }
 
-body{
+body {
     background-color: #FEC7D7;
 }
 
+#test {
+    padding-bottom: 70px;
+}
 
+.me {
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.message-me {
+    margin-top: 15px;
+    padding: 15px;
+    background: azure;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.message-you {
+    margin-top: 15px;
+    padding: 15px;
+    background: #535353;
+    width: 70%;
+    height: auto;
+    border-radius: 15px;
+    color: azure;
+}
+
+.boton, #pills-home-tab, #pills-profile-tab {
+    background: #0E172C;
+    color: white;
+}
+
+#active, .save {
+    background: #0E172C;
+    color: white;
+}
+
+@media (min-width: 576px) {
+    #pruebas{
+        display: flex;
+        align-items: center;
+    }
+    #test, #chat {
+        width: 40%;
+        margin: 0 auto;
+    }
+    #move1 {
+        height: 30%;
+        background: white;
+        width: 30%;
+        margin: 0 auto;
+    }
+    #move2 {
+        height: auto;
+        width: 50%;
+        margin: 0 auto;
+    }
+}

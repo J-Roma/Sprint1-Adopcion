@@ -34,7 +34,7 @@ export const dog1 = {
     sexo: "male",
     edad: "3 Meses",
     direccion: "4140 Parker Rd. Allentown, New Mexico 31134",
-    personalidad: ["tierno", "inquieto", "jugueton"],
+    personalidad: ["https://i.imgur.com/KbQAni6.png", "https://i.imgur.com/QcCox6Z.png", "https://i.imgur.com/PdhNFow.png"],
     historia: "Rocky es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada. "
 }
 export const cat1 = {
@@ -46,7 +46,7 @@ export const cat1 = {
     sexo: "famale",
     edad: "6 Meses",
     direccion: "4140 Parker Rd. Allentown, New Mexico 31134",
-    personalidad: ["jugueton", "inquieto", "tierno"],
+    personalidad: ["https://i.imgur.com/PdhNFow.png", "https://i.imgur.com/QcCox6Z.png", "https://i.imgur.com/KbQAni6.png"],
     historia: "Matilde es la mejor guarda espaldas, siempre esta hay para conversar y recibirá cada día con un fuerte cariño. Fue rescatada y busco una persona que le pueda dar todo el amor que ella necesita. "
 
 }

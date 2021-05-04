@@ -18,13 +18,13 @@
       <p class="mt-4"> Categoría de mascotas</p>
       <div class="justify-content-center">
         <ul class=" nav nav-pills mb-3 " id="pills-tab" role="tablist">
-          <li class="nav-item col-6" role="presentation">
+          <li class="nav-item col-6" role="presentation" id="toggle">
             <button class="btn nav-link ms-3 h6" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
               type="button" role="tab" aria-controls="pills-home" aria-selected="true">
-              <img class="img-fluid" src="./images/perro2.png"> Perro
+              <img  class="img-fluid" src="./images/perro2.png"> Perro
             </button>
           </li>
-          <li class="nav-item col-6" role="presentation">
+          <li class="nav-item col-6 opaq" role="presentation" id="toggle2">
             <button class="btn nav-link h6 ms-2" id="pills-profile-tab" data-bs-toggle="pill"
               data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
               aria-selected="false">
@@ -34,16 +34,16 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-            <img src="./images/chester.png">
-            <img src="./images/papi.png">
-            <a href="./info.html?id=dog1"><img src="./images/rocky.png"></a>
-            <img src="./images/pelusa.png">
+            <img src="https://i.imgur.com/vImHyF8.png">
+            <img src="https://i.imgur.com/1Z6fBCO.png">
+            <a href="./info.html?id=dog1"><img src="https://i.imgur.com/JcPsn77.png"></a>
+            <img src="https://i.imgur.com/PfgavH8.png">
           </div>
           <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-            <a href="./info.html?id=cat1"><img class="img-fluid" src="./images/matilde.png"></a>
-            <img class="img-fluid" src="./images/pelusag.png">
-            <img class="img-fluid"src="./images/kitty.png">
-            <img class="img-fluid" src="./images/bombon.png">
+            <a href="./info.html?id=cat1"><img class="img-fluid" src="https://i.imgur.com/4Kx6vwP.png"></a>
+            <img class="img-fluid" src="https://i.imgur.com/q2sqaFk.png">
+            <img class="img-fluid"src="https://i.imgur.com/jtlZYxF.png">
+            <img class="img-fluid" src="https://i.imgur.com/lhatFT5.png">
           </div>
         </div>
       </div>
@@ -75,6 +75,7 @@
   integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
 <script src="/socket.io/socket.io.js" charset="utf-8"></script>
 <script src="/scripts/navbar.js"></script>
+<script src="./scripts/home.js"></script>
 
 </html>
 

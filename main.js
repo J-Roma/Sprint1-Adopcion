@@ -9,15 +9,15 @@ const saveLocalStorage = window.localStorage
 
 document.addEventListener('DOMContentLoaded', () => {
     let URL = localStorage.getItem('URL')
-    document.querySelector('#back-url').setAttribute('href', URL)
+    document.querySelector('#back-url').setAttribute('href', `./${URL}`)
     saveLocalStorage.hasOwnProperty('favAmount') ? console.log('Existe') : localStorage.setItem('favAmount', JSON.stringify([]));
     if (valueParam === 'cat1') {
         saveLocalStorage.hasOwnProperty('favStateCat1') ? console.log(saveLocalStorage.favStateCat1) : localStorage.setItem('favStateCat1', 'disable');
-        saveLocalStorage.favStateCat1 === 'disable' ? document.querySelector('#fav').src = '/images/fav.png' : document.querySelector('#fav').src = '/images/fav-select.png';
+        saveLocalStorage.favStateCat1 === 'disable' ? document.querySelector('#fav').src = 'https://i.imgur.com/Xr6l0by.png' : document.querySelector('#fav').src = 'https://i.imgur.com/CyTgaSy.png';
     }
     if (valueParam === 'dog1') {
         saveLocalStorage.hasOwnProperty('favStateDog1') ? console.log(saveLocalStorage.favStateDog1) : localStorage.setItem('favStateDog1', 'disable');
-        saveLocalStorage.favStateDog1 === 'disable' ? document.querySelector('#fav').src = '/images/fav.png' : document.querySelector('#fav').src = '/images/fav-select.png';
+        saveLocalStorage.favStateDog1 === 'disable' ? document.querySelector('#fav').src = 'https://i.imgur.com/Xr6l0by.png' : document.querySelector('#fav').src = 'https://i.imgur.com/CyTgaSy.png';
     }
 })
 
@@ -57,9 +57,9 @@ btn_fav.addEventListener('click', () => {
 
 if (valueParam === "cat1") {
     document.querySelector('#pic').src = cat1.pic2
-    document.querySelector('#n-sex').innerHTML = `${cat1.nombre} <img src="images/${cat1.sexo}.png">`
-    document.querySelector('#raza').innerHTML = `<img src="images/raza.png"> ${cat1.raza}`
-    document.querySelector('#edad').innerHTML = `<img src="/images/edadprro.png"> ${cat1.edad}`
+    document.querySelector('#n-sex').innerHTML = `${cat1.nombre} <img src="${cat1.sexo}">`
+    document.querySelector('#raza').innerHTML = `<img src="https://i.imgur.com/6iI3VMP.png"> ${cat1.raza}`
+    document.querySelector('#edad').innerHTML = `<img src="https://i.imgur.com/nfDlXaH.png"> ${cat1.edad}`
     document.querySelector('#perso1').src = `${cat1.personalidad[0]}`
     document.querySelector('#perso2').src = `${cat1.personalidad[1]}`
     document.querySelector('#perso3').src = `${cat1.personalidad[2]}`
@@ -67,9 +67,9 @@ if (valueParam === "cat1") {
 }
 if (valueParam === "dog1") {
     document.querySelector('#pic').src = dog1.pic2
-    document.querySelector('#n-sex').innerHTML = `${dog1.nombre} <img src="images/${dog1.sexo}.png">`
-    document.querySelector('#raza').innerHTML = `<img src="images/raza.png"> ${cat1.raza}`
-    document.querySelector('#edad').innerHTML = `<img src="/images/edadprro.png"> ${dog1.edad}`
+    document.querySelector('#n-sex').innerHTML = `${dog1.nombre} <img src="${dog1.sexo}">`
+    document.querySelector('#raza').innerHTML = `<img src="https://i.imgur.com/6iI3VMP.png"> ${cat1.raza}`
+    document.querySelector('#edad').innerHTML = `<img src="https://i.imgur.com/nfDlXaH.png"> ${dog1.edad}`
     document.querySelector('#perso1').src = `${dog1.personalidad[0]}`
     document.querySelector('#perso2').src = `${dog1.personalidad[1]}`
     document.querySelector('#perso3').src = `${dog1.personalidad[2]}`

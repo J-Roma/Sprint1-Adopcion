@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   let URL = window.location.pathname
   localStorage.setItem('URL', URL)
-
+  
   function myFunction(x) {
     if (x.matches) { // If media query matches
       document.querySelector('#pop').classList.replace('fixed-bottom', 'fixed-top')

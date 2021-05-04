@@ -9,7 +9,7 @@ const saveLocalStorage = window.localStorage
 
 document.addEventListener('DOMContentLoaded', () => {
     let URL = localStorage.getItem('URL')
-    document.querySelector('#back-url').setAttribute('href', `./${URL}`)
+    document.querySelector('#back-url').setAttribute('href', `${URL}`)
     saveLocalStorage.hasOwnProperty('favAmount') ? console.log('Existe') : localStorage.setItem('favAmount', JSON.stringify([]));
     if (valueParam === 'cat1') {
         saveLocalStorage.hasOwnProperty('favStateCat1') ? console.log(saveLocalStorage.favStateCat1) : localStorage.setItem('favStateCat1', 'disable');

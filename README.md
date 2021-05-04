@@ -12,6 +12,12 @@ Puedes verlo aquí: https://j-roma.github.io/Sprint1-Adopcion/
 
 ## Requerimientos
 
+En Casp de no Visualizar Correctamente la aplicacion por GitHub Pages, Clonar Repositorio y Ejecutar el comando: 
+  
+nodemon index.js
+O npm run dev (Si tienes la misma configuracion de package.json)
+                                                                                                                 
+
 Socket.io
 Node.js
 Express

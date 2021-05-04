@@ -5,18 +5,15 @@ Sprint1, Mobil to Web, Web page to adopt pets.
 # 💎 App de adopción
 
 Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos momentos con estos amiguitos fieles, tiernos y llenos de amor para regalar.
-
+Si quieres probar la funcionalidad del chat con Socket.io/WebSockets correctamente, Clonar Repositorio, eliminar los comentarios pertinentes (En HTML&JS Files), instalar las dependencias requeridas y Ejecutar el comando: 
+  
+nodemon index.js
+O npm run dev (Si tienes la misma configuracion de package.json)
 
 Puedes verlo aquí: https://j-roma.github.io/Sprint1-Adopcion/
                    https://github.com/J-Roma/Sprint1-Adopcion
 
-## Requerimientos
-
-En Casp de no Visualizar Correctamente la aplicacion por GitHub Pages, Clonar Repositorio y Ejecutar el comando: 
-  
-nodemon index.js
-O npm run dev (Si tienes la misma configuracion de package.json)
-                                                                                                                 
+## Requerimientos                                              
 
 Socket.io
 Node.js

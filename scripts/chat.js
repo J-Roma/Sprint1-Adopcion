@@ -64,12 +64,13 @@ btn = message.addEventListener('submit', e => {
             <p class="text-end h6">${showTime}</p>
             </div>
         </div>`
-    let msgTemporal = {msg: data.content, hora: showTime}
+    let msgTemporal = {msg: content.value, hora: showTime}
+    let msgLocal = localStorage.getItem('msgContainer')
+    msgLocal = JSON.parse(msgLocal)
     msgLocal.push(msgTemporal)
     localStorage.setItem('msgContainer', JSON.stringify(msgLocal))
-    // Comentar para trabajar con websocket ---Fin
     content.value = ''
-
+ // Comentar para trabajar con websocket ---Fin
     
 })
 

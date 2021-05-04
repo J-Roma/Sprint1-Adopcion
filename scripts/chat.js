@@ -1,4 +1,4 @@
-const socket = io()
+//const socket = io()
 let state = 0
 let i = 0
 const msgContainer = [
@@ -47,9 +47,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
 btn = message.addEventListener('submit', e => {
 
-    socket.emit('myMessage', {
+    /*Para probar el chat con websokect, Descomentar*/
+    /*socket.emit('myMessage', {
         content: content.value
-    })
+    })*/
+    
+    // Comentar para trabajar con websocket ---Inicio
+    getTime()
+    output.innerHTML += `
+        <divid="me" class="me">
+            <div class="message-me">
+            <p>${data.content}</p>
+            <p class="text-end h6">${showTime}</p>
+            </div>
+        </div>`
+    let msgTemporal = {msg: data.content, hora: showTime}
+    msgLocal.push(msgTemporal)
+    localStorage.setItem('msgContainer', JSON.stringify(msgLocal))
+    // Comentar para trabajar con websocket ---Fin
+
+
     content.value = ''
 
     e.preventDefault()
@@ -66,7 +83,8 @@ function getTime(){
     
 }
 
-socket.on('myMessage', (data) => {
+// Descomentar para WebSocket
+/*socket.on('myMessage', (data) => {
     getTime()
     output.innerHTML += `
         <divid="me" class="me">
@@ -78,7 +96,7 @@ socket.on('myMessage', (data) => {
     let msgTemporal = {msg: data.content, hora: showTime}
     msgLocal.push(msgTemporal)
     localStorage.setItem('msgContainer', JSON.stringify(msgLocal))
-})
+})*/
 
 
 

@@ -1,6 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', () => {
-  let URL = window.location.href
+  let URL = window.location.pathname
   localStorage.setItem('URL', URL)
 
   function myFunction(x) {

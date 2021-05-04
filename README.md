@@ -7,7 +7,8 @@ Sprint1, Mobil to Web, Web page to adopt pets.
 Adoptar puede ser una de las experiencias más grandiosas de tu vida, donde compartirás bellos momentos con estos amiguitos fieles, tiernos y llenos de amor para regalar.
 
 
-Puedes verlo aquí: <j-roma.github.com/Sprint>
+Puedes verlo aquí: https://j-roma.github.io/Sprint1-Adopcion/
+                   https://github.com/J-Roma/Sprint1-Adopcion
 
 ## Requerimientos
 
@@ -33,16 +34,16 @@ npm install --save-dev nodemon
 
 ### 💻 Desktop
 
-<imagen aquí>
+<img src="https://i.imgur.com/EJbaxx7.png">
 
 ### 📱 Mobile
 
-<imagen aquí>
+<img src="https://i.imgur.com/4CBRKy9.png">
 
 ## 📌 Stack
 
-<escribe aquí>
+HTML5, CSS, Bootstrap 5, JavaScript, Git GitHub, Node.js, Express, Socket.io
 
 ## 🌟 Autor
 
-***Jhosep Said Ropero Martienz**  - [@J-Roma](https://github.com/J-roma)
+***Jhosep Said Ropero Martienz**  - [@J-Roma](https://github.com/J-Roma)

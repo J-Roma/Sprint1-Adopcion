@@ -11,12 +11,13 @@ const msgContainer = [
 let message = document.querySelector('#form')
 let content = document.querySelector('#message')
 let output = document.querySelector('#chat')
-var msgLocal = localStorage.getItem('msgContainer')
-msgLocal = JSON.parse(msgLocal)
 
 
 document.addEventListener('DOMContentLoaded', () => {
     window.localStorage.hasOwnProperty('msgContainer') ? console.log('Ok') : localStorage.setItem('msgContainer', JSON.stringify(msgContainer));
+    let msgLocal = localStorage.getItem('msgContainer')
+    msgLocal = JSON.parse(msgLocal)
+
     msgLocal.forEach(() => {
         state === 0 ? (
             output.innerHTML += `
@@ -53,11 +54,13 @@ btn = message.addEventListener('submit', e => {
     })*/
     
     // Comentar para trabajar con websocket ---Inicio
+    e.preventDefault()
+    //let data = content.value
     getTime()
     output.innerHTML += `
         <divid="me" class="me">
             <div class="message-me">
-            <p>${data.content}</p>
+            <p>${content.value}</p>
             <p class="text-end h6">${showTime}</p>
             </div>
         </div>`
@@ -65,11 +68,9 @@ btn = message.addEventListener('submit', e => {
     msgLocal.push(msgTemporal)
     localStorage.setItem('msgContainer', JSON.stringify(msgLocal))
     // Comentar para trabajar con websocket ---Fin
-
-
     content.value = ''
 
-    e.preventDefault()
+    
 })
 
 function getTime(){

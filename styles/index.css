@@ -1,0 +1,24 @@
+body{
+    background-color: #FEC7D7;
+    padding: 10%;
+}
+.imagen{
+    width: auto;
+    height: auto;
+    transition: ls;
+}
+
+.imagen:hover {
+    transform: scale(5);
+}
+
+@media (max-width: 524px){
+    body{
+        padding: 30%;
+    }
+    
+    .imagen:hover {
+        transform: scale(2);
+    }
+
+}

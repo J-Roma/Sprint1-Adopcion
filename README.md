@@ -45,7 +45,7 @@ npm install --save-dev nodemon
 
 ## 📌 Stack
 
-HTML5, CSS, Bootstrap 5, JavaScript, Git GitHub, Node.js, Express, Socket.io
+HTML5, CSS, JavaScript, Bootstrap 5, Git GitHub, Node.js, Express, Socket.io
 
 ## 🌟 Autor
 
